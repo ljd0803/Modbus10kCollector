@@ -1,0 +1,102 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\mytest\\Modbus10kCollector\\Modbus10kCollector\\Modbus10kCollector.csproj": {}
+  },
+  "projects": {
+    "E:\\mytest\\Modbus10kCollector\\Modbus10kCollector\\Modbus10kCollector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\mytest\\Modbus10kCollector\\Modbus10kCollector\\Modbus10kCollector.csproj",
+        "projectName": "Modbus10kCollector",
+        "projectPath": "E:\\mytest\\Modbus10kCollector\\Modbus10kCollector\\Modbus10kCollector.csproj",
+        "packagesPath": "C:\\Users\\ljd08\\.nuget\\packages\\",
+        "outputPath": "E:\\mytest\\Modbus10kCollector\\Modbus10kCollector\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ljd08\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MQTTnet": {
+              "target": "Package",
+              "version": "[5.2.0.1603, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[10.0.12, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "NModbus": {
+              "target": "Package",
+              "version": "[3.0.83, )"
+            },
+            "Prism.DryIoc": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "Stateless": {
+              "target": "Package",
+              "version": "[5.20.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

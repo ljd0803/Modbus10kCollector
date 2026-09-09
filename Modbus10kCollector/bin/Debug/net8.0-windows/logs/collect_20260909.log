@@ -1,0 +1,723 @@
+2026-09-09 17:37:33.7289|INFO|Modbus10kCollector.Services.DeviceConfigService|成功读取devices.json，共加载 1 台设备 
+2026-09-09 17:37:33.7289|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|UI已加载 1 台PLC设备到界面列表 
+2026-09-09 17:37:33.7289|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|MainWindowViewModel 初始化完成 
+2026-09-09 17:37:36.6431|INFO|Modbus10kCollector.Services.MqttPublishService|MQTT5连接成功 mqtt://192.168.1.66 
+2026-09-09 17:37:36.6431|INFO|Modbus10kCollector.Services.PlcCollectService|PLC采集服务已启动 
+2026-09-09 17:37:36.6431|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|采集任务启动成功 
+2026-09-09 17:37:36.6692|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 17:37:36.6946|ERROR|Modbus10kCollector.Services.PlcCollectService|PLC[]采集异常，连续失败次数:1 System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port)
+   at System.Net.Sockets.TcpClient.ConnectAsync(String host, Int32 port)
+   at Modbus10kCollector.Services.PlcCollectService.SinglePlcCollectTask(PlcDevice plc, CancellationToken token) in E:\mytest\Modbus10kCollector\Modbus10kCollector\Services\PlcCollectService.cs:line 107
+2026-09-09 17:37:36.7408|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Connecting → Disconnected，触发事件:ConnectFail 
+2026-09-09 17:37:37.7778|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 17:37:37.7941|ERROR|Modbus10kCollector.Services.PlcCollectService|PLC[]采集异常，连续失败次数:2 System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port)
+   at System.Net.Sockets.TcpClient.ConnectAsync(String host, Int32 port)
+   at Modbus10kCollector.Services.PlcCollectService.SinglePlcCollectTask(PlcDevice plc, CancellationToken token) in E:\mytest\Modbus10kCollector\Modbus10kCollector\Services\PlcCollectService.cs:line 107
+2026-09-09 17:37:37.7941|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Connecting → Disconnected，触发事件:ConnectFail 
+2026-09-09 17:37:38.7977|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 17:37:38.8112|ERROR|Modbus10kCollector.Services.PlcCollectService|PLC[]采集异常，连续失败次数:3 System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port)
+   at System.Net.Sockets.TcpClient.ConnectAsync(String host, Int32 port)
+   at Modbus10kCollector.Services.PlcCollectService.SinglePlcCollectTask(PlcDevice plc, CancellationToken token) in E:\mytest\Modbus10kCollector\Modbus10kCollector\Services\PlcCollectService.cs:line 107
+2026-09-09 17:37:38.8112|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Connecting → Disconnected，触发事件:ConnectFail 
+2026-09-09 17:37:39.8154|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 17:37:39.8347|ERROR|Modbus10kCollector.Services.PlcCollectService|PLC[]采集异常，连续失败次数:4 System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port)
+   at System.Net.Sockets.TcpClient.ConnectAsync(String host, Int32 port)
+   at Modbus10kCollector.Services.PlcCollectService.SinglePlcCollectTask(PlcDevice plc, CancellationToken token) in E:\mytest\Modbus10kCollector\Modbus10kCollector\Services\PlcCollectService.cs:line 107
+2026-09-09 17:37:39.8347|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Connecting → Disconnected，触发事件:ConnectFail 
+2026-09-09 17:37:40.8478|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 17:37:40.9025|ERROR|Modbus10kCollector.Services.PlcCollectService|PLC[]采集异常，连续失败次数:5 System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port)
+   at System.Net.Sockets.TcpClient.ConnectAsync(String host, Int32 port)
+   at Modbus10kCollector.Services.PlcCollectService.SinglePlcCollectTask(PlcDevice plc, CancellationToken token) in E:\mytest\Modbus10kCollector\Modbus10kCollector\Services\PlcCollectService.cs:line 107
+2026-09-09 17:37:40.9025|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Connecting → Disconnected，触发事件:ConnectFail 
+2026-09-09 17:37:40.9025|WARN|Modbus10kCollector.Services.PlcCollectService|PLC[] 连续失败达到阈值 5，进入冷却 60s 
+2026-09-09 19:31:04.6614|INFO|Modbus10kCollector.Services.DeviceConfigService|成功读取devices.json，共加载 1 台设备 
+2026-09-09 19:31:04.6811|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|UI已加载 1 台PLC设备到界面列表 
+2026-09-09 19:31:04.6811|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|MainWindowViewModel 初始化完成 
+2026-09-09 19:31:14.5577|INFO|Modbus10kCollector.Services.MqttPublishService|MQTT5连接成功 mqtt://192.168.1.66 
+2026-09-09 19:31:14.5577|INFO|Modbus10kCollector.Services.PlcCollectService|PLC采集服务已启动 
+2026-09-09 19:31:14.5577|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|采集任务启动成功 
+2026-09-09 19:31:14.5870|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 19:39:25.1935|INFO|Modbus10kCollector.Services.DeviceConfigService|成功读取devices.json，共加载 1 台设备 
+2026-09-09 19:39:25.2054|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|UI已加载 1 台PLC设备到界面列表 
+2026-09-09 19:39:25.2054|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|MainWindowViewModel 初始化完成 
+2026-09-09 19:39:29.4915|INFO|Modbus10kCollector.Services.MqttPublishService|MQTT5连接成功 mqtt://192.168.1.66 
+2026-09-09 19:39:29.4915|INFO|Modbus10kCollector.Services.PlcCollectService|PLC采集服务已启动 
+2026-09-09 19:39:29.4915|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|采集任务启动成功 
+2026-09-09 19:39:29.5128|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 19:39:54.6429|ERROR|Modbus10kCollector.Services.PlcCollectService|PLC[]采集异常，连续失败次数:1 System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.ConnectAsync(String host, Int32 port)
+   at System.Net.Sockets.TcpClient.ConnectAsync(String host, Int32 port)
+   at Modbus10kCollector.Services.PlcCollectService.SinglePlcCollectTask(PlcDevice plc, CancellationToken token) in E:\mytest\Modbus10kCollector\Modbus10kCollector\Services\PlcCollectService.cs:line 107
+2026-09-09 19:39:54.7051|WARN|Modbus10kCollector.Services.MqttPublishService|MQTT5客户端断开，原因:KeepAliveTimeout，3秒后尝试重连 
+2026-09-09 19:39:54.7536|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Connecting → Disconnected，触发事件:ConnectFail 
+2026-09-09 19:39:55.7705|INFO|Modbus10kCollector.Models.PlcDevice|PLC[] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 19:43:08.0356|INFO|Modbus10kCollector.Services.DeviceConfigService|成功读取devices.json，共加载 1 台设备 
+2026-09-09 19:43:08.0695|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|UI已加载 1 台PLC设备到界面列表 
+2026-09-09 19:43:08.0695|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|MainWindowViewModel 初始化完成 
+2026-09-09 19:43:11.1678|INFO|Modbus10kCollector.Services.MqttPublishService|MQTT5连接成功 mqtt://192.168.1.66 
+2026-09-09 19:43:11.1721|INFO|Modbus10kCollector.Services.PlcCollectService|PLC采集服务已启动 
+2026-09-09 19:43:11.1721|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|采集任务启动成功 
+2026-09-09 19:43:11.1895|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 19:43:20.1767|INFO|Modbus10kCollector.Services.PlcCollectService|PLC[PLC001] TCP连接成功 127.0.0.1:502 
+2026-09-09 19:43:20.7566|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Connecting → Idle，触发事件:ConnectSuccess 
+2026-09-09 19:43:22.0024|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:22.0520|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:23.1696|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:23.1877|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:24.1897|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:24.2055|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:25.2219|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:25.2372|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:26.2409|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:26.2710|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:27.2736|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:27.3003|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:28.3052|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:28.3320|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:29.3366|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:29.3489|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:30.3586|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:30.3820|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:31.3897|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:31.4101|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:32.4139|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:32.4275|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:33.4314|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:33.4564|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:34.4625|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:34.4854|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:35.4878|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:35.5135|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:36.5172|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:36.5172|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:37.5336|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:37.5460|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:38.5486|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:38.5669|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:39.5690|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:39.5844|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:40.5911|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:40.6150|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:41.6196|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:41.6319|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:42.6341|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:42.6489|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:43.6584|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:43.6811|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:44.6836|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:44.6980|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:45.7008|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:45.7131|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:46.7196|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:46.7462|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:47.7482|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:47.7621|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:48.7693|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:48.7938|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:49.8024|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:49.8294|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:50.8306|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:50.8682|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:51.8708|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:51.8972|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:52.9006|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:52.9161|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:53.9201|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:53.9530|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:54.9578|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:54.9699|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:55.9712|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:55.9868|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:56.9966|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:57.0199|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:58.0222|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:58.0373|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:43:59.0416|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:43:59.0560|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:00.0613|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:00.0873|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:01.0888|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:01.1038|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:02.1059|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:02.1189|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:03.1234|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:03.1346|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:04.1361|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:04.1475|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:05.1510|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:05.1760|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:06.1801|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:06.1961|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:07.1986|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:07.2129|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:08.2150|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:08.2293|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:09.2365|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:09.2518|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:10.2835|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:10.2978|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:11.3168|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:11.3323|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:12.3497|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:12.3649|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:13.3801|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:13.3953|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:14.4123|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:14.4285|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:15.4410|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:15.4574|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:16.4871|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:16.5011|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:17.5185|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:17.5336|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:18.5499|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:18.5651|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:19.5811|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:19.5969|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:20.6023|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:20.6184|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:21.6421|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:21.6628|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:22.6727|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:22.6882|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:23.6942|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:23.7111|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:24.7436|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:24.7775|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:25.7870|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:25.8028|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:26.8181|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:26.8331|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:27.8535|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:27.8684|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:28.8847|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:28.9004|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:29.9126|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:29.9283|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:30.9430|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:30.9589|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:31.9721|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:31.9874|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:33.0036|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:33.0185|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:34.0311|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:34.0315|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:35.0627|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:35.0787|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:36.0936|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:36.0936|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:37.1237|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:37.1394|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:38.1682|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:38.1838|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:39.1974|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:39.2133|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:40.2297|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:40.2600|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:41.2730|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:41.2886|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:42.3060|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:42.3214|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:43.3342|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:43.3519|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:44.3645|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:44.3802|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:45.3967|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:45.4127|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:46.4268|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:46.4410|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:47.4554|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:47.4716|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:48.4885|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:48.5040|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:49.5196|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:49.5351|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:50.5497|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:50.5810|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:51.5941|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:51.5941|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:52.6233|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:52.6390|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:53.6537|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:53.6715|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:54.6880|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:54.6880|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:55.7199|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:55.7199|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:56.7502|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:56.7662|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:57.7822|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:57.8116|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:58.8274|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:58.8422|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:44:59.8601|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:44:59.8601|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:00.8804|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:00.8965|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:01.9150|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:01.9318|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:02.9504|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:02.9659|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:03.9846|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:03.9846|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:05.0130|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:05.0446|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:06.0621|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:06.0925|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:07.1220|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:07.1524|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:08.1836|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:08.2132|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:09.2328|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:09.2480|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:10.2624|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:10.2783|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:11.2946|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:11.3098|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:12.3262|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:12.3414|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:13.3539|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:13.3696|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:14.3875|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:14.4154|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:15.4296|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:15.4503|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:16.4642|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:16.4800|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:17.4877|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:17.5037|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:18.5382|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:18.5537|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:19.5724|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:19.5868|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:20.5922|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:20.6076|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:21.6220|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:21.6371|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:22.6549|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:22.6698|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:23.6827|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:23.7015|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:24.7129|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:24.7290|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:25.7452|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:25.7601|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:26.7775|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:26.7949|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:27.8270|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:27.8439|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:28.8580|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:28.8717|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:29.8889|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:29.9052|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:30.9191|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:30.9340|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:31.9479|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:31.9634|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:32.9782|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:32.9971|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:34.0089|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:34.0269|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:35.0467|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:35.0744|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:36.0858|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:36.1019|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:37.1185|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:37.1348|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:38.1490|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:38.1658|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:39.1769|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:39.1935|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:40.2109|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:40.2453|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:41.2560|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:41.2731|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:42.2826|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:42.2985|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:43.3138|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:43.3299|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:44.3476|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:44.3636|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:45.3774|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:45.3927|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:46.4128|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:46.4400|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:47.4551|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:47.4701|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:48.4839|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:48.4994|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:49.5144|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:49.5303|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:50.5448|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:50.5602|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:51.5761|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:51.5924|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:52.6073|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:52.6241|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:53.6394|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:53.6677|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:54.6821|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:54.6980|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:55.7129|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:55.7278|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:56.7450|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:56.7602|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:57.7769|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:57.7905|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:58.8102|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:58.8226|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:45:59.8393|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:45:59.8533|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:00.8699|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:00.8864|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:01.9017|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:01.9203|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:02.9358|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:02.9495|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:03.9680|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:03.9836|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:04.9999|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:05.0324|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:06.0496|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:06.0496|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:07.0790|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:07.0952|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:08.1137|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:08.1283|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:09.1471|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:09.1801|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:10.1896|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:10.2059|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:11.2201|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:11.2201|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:12.2533|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:12.2733|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:13.2837|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:13.3011|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:14.3139|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:14.3296|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:15.3481|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:15.3780|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:16.3935|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:16.4098|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:17.4394|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:17.4547|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:18.4694|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:18.4847|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:19.5008|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:19.5166|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:20.5316|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:20.5474|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:21.5634|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:21.5819|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:22.5998|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:22.6177|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:23.6283|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:23.6442|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:46:24.6600|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:46:36.2126|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:05.4279|INFO|Modbus10kCollector.Services.DeviceConfigService|成功读取devices.json，共加载 1 台设备 
+2026-09-09 19:48:05.4401|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|UI已加载 1 台PLC设备到界面列表 
+2026-09-09 19:48:05.4401|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|MainWindowViewModel 初始化完成 
+2026-09-09 19:48:08.5911|INFO|Modbus10kCollector.Services.MqttPublishService|MQTT5连接成功 mqtt://192.168.1.66 
+2026-09-09 19:48:08.5911|INFO|Modbus10kCollector.Services.PlcCollectService|PLC采集服务已启动 
+2026-09-09 19:48:08.5911|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|采集任务启动成功 
+2026-09-09 19:48:08.6118|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 19:48:12.2466|INFO|Modbus10kCollector.Services.PlcCollectService|PLC[PLC001] TCP连接成功 127.0.0.1:502 
+2026-09-09 19:48:12.2466|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Connecting → Idle，触发事件:ConnectSuccess 
+2026-09-09 19:48:12.2466|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:15.7558|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:37.8177|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:37.8462|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:41.7277|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:41.7436|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:42.7448|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:42.7641|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:43.7692|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:43.7960|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:44.8040|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:44.8271|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:45.8301|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:45.8435|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:46.8478|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:46.8478|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:47.8657|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:47.8920|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:48.8935|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:48.9225|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:49.9254|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:49.9530|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:50.9590|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:50.9757|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:51.9797|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:51.9915|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:52.9969|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:53.0109|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:54.0149|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:54.0329|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:55.0394|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:55.0507|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:56.0550|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:56.0700|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:57.0810|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:57.0997|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:58.1054|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:58.1316|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:48:59.1362|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:48:59.1640|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:00.1685|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:00.1913|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:01.2000|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:01.2250|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:02.2285|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:02.2420|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:03.2460|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:03.2756|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:04.2807|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:04.3055|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:05.3184|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:05.3387|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:06.3450|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:06.3690|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:07.3718|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:07.3871|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:08.3917|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:08.4163|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:09.4221|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:09.4493|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:10.4562|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:10.4801|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:11.4867|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:11.5097|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:12.5111|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:12.5260|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:13.5412|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:13.5583|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:14.5602|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:14.5726|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:15.5758|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:15.5909|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:16.5969|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:16.6184|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:17.6221|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:17.6345|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:18.6368|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:18.6484|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:19.6499|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:19.6653|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:20.6697|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:20.6963|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:21.6989|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:21.7131|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:22.7167|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:22.7438|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:23.7519|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:23.7738|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:24.7762|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:24.7910|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:25.7995|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:25.8204|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:26.8235|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:26.8485|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:27.8569|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:27.8783|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:28.8804|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:28.8994|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:29.9020|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:29.9142|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:30.9162|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:30.9342|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:31.9364|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:31.9570|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:32.9607|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:32.9756|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:33.9780|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:33.9966|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:34.9988|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:35.0132|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:36.0167|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:36.0329|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:37.0383|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:37.0606|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:38.0660|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:38.0945|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:39.1089|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:39.1249|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:40.1354|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:40.1517|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:41.1582|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:41.1833|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:42.1939|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:42.2156|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:43.2186|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:43.2343|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:44.2395|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:44.2395|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:45.2543|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:45.2543|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:46.2795|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:46.2995|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:47.3006|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:47.3006|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:49:48.3172|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:49:48.3172|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:08.0081|INFO|Modbus10kCollector.Services.DeviceConfigService|成功读取devices.json，共加载 1 台设备 
+2026-09-09 19:56:08.0308|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|UI已加载 1 台PLC设备到界面列表 
+2026-09-09 19:56:08.0308|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|MainWindowViewModel 初始化完成 
+2026-09-09 19:56:10.3685|INFO|Modbus10kCollector.Services.MqttPublishService|MQTT5连接成功 mqtt://192.168.1.66 
+2026-09-09 19:56:10.3685|INFO|Modbus10kCollector.Services.PlcCollectService|PLC采集服务已启动 
+2026-09-09 19:56:10.3685|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|采集任务启动成功 
+2026-09-09 19:56:10.3890|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 19:56:10.3890|INFO|Modbus10kCollector.Services.PlcCollectService|PLC[PLC001] TCP连接成功 127.0.0.1:502 
+2026-09-09 19:56:10.3890|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Connecting → Idle，触发事件:ConnectSuccess 
+2026-09-09 19:56:10.3890|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:10.4435|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:11.4752|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:11.4964|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:12.5025|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:12.5260|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:13.5338|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:13.5553|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:14.5587|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:14.5733|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:15.5768|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:15.6082|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:16.6139|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:16.6342|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:17.6382|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:17.6503|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:18.6532|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:18.6743|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:19.6780|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:19.6926|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:20.6965|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:20.6965|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:21.7108|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:21.7243|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:22.7321|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:22.7543|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:23.7584|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:23.7584|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:24.7710|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:24.7859|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:25.7930|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:25.8168|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:26.8240|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:26.8483|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:27.8509|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:27.8831|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:28.8963|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:28.9157|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:29.9220|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:29.9339|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:30.9474|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:30.9681|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:31.9719|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:31.9855|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:32.9935|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:33.0175|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:34.0221|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:34.0479|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:35.0567|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:35.0811|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:36.0843|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:36.0961|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:37.0979|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:37.1154|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:38.1220|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:38.1487|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:39.1563|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:39.1778|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:40.1822|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:40.1822|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:41.2122|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:41.2285|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:42.2333|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:42.2602|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:43.2654|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:43.2788|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:44.2839|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:44.2965|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:45.3027|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:45.3279|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:46.3318|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:46.3449|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:47.3520|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:47.3738|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:48.3914|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:48.4062|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:49.4236|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:49.4384|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:50.4542|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:50.4714|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:51.4858|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:51.5012|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:52.5135|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:52.5292|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:53.5490|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:53.5813|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:54.5938|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:54.6116|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:55.6240|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:55.6399|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:56.6555|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:56.6702|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:57.6865|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:57.7020|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:58.7181|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:58.7339|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:56:59.7444|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:56:59.7662|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:00.7681|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:57:00.7868|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:01.5522|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Disconnected，触发事件:Reset 
+2026-09-09 19:57:01.5522|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|PLC[PLC001] 手动重置完成，冷却计时已清除 
+2026-09-09 19:57:01.7923|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Disconnected → Connecting，触发事件:Connect 
+2026-09-09 19:57:01.7923|INFO|Modbus10kCollector.Services.PlcCollectService|PLC[PLC001] TCP连接成功 127.0.0.1:502 
+2026-09-09 19:57:01.7923|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Connecting → Idle，触发事件:ConnectSuccess 
+2026-09-09 19:57:01.7923|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:57:01.8315|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:02.8356|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:57:02.8476|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:03.8581|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:57:03.8781|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:04.8858|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:57:04.8858|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:05.9080|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:57:05.9298|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:06.9348|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Idle → Collecting，触发事件:StartCollect 
+2026-09-09 19:57:06.9599|INFO|Modbus10kCollector.Models.PlcDevice|PLC[PLC001] 状态变更 Collecting → Idle，触发事件:ReadSuccess 
+2026-09-09 19:57:07.0045|INFO|Modbus10kCollector.Services.PlcCollectService|采集主循环收到停止信号，正常退出 
+2026-09-09 19:57:07.0045|INFO|Modbus10kCollector.Services.PlcCollectService|PLC采集服务已停止 
+2026-09-09 19:57:07.0265|INFO|Modbus10kCollector.Services.MqttPublishService|MQTT断开连接 
+2026-09-09 19:57:07.0265|INFO|Modbus10kCollector.ViewModels.MainWindowViewModel|采集任务已停止 
+2026-09-09 19:57:07.0265|WARN|Modbus10kCollector.Services.MqttPublishService|MQTT5客户端断开，原因:NormalDisconnection，3秒后尝试重连 
