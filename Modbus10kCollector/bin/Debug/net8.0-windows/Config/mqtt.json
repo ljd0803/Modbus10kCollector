@@ -1,7 +1,0 @@
-{
-    "BrokerAddress": "mqtt://192.168.1.66",
-    "ClientId": "MyWpfClient",
-    "Username": "admin",
-    "Password": "ljd0803_",
-    "Topic": "myapp/telemetry/"
-}
