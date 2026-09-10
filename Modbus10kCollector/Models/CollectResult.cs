@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace Modbus10kCollector.Models
 {
@@ -15,5 +16,11 @@ namespace Modbus10kCollector.Models
        
         public DateTime Time { get; set; }
         public string Msg { get; set; } = string.Empty;
+
+        public override string ToString()
+        {
+            var result = System.Text.Json.JsonSerializer.Serialize(this);
+            return result;
+        }
     }
 }

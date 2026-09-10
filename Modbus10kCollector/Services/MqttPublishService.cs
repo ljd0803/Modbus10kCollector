@@ -37,13 +37,34 @@ namespace Modbus10kCollector.Services
             {
                 var factory = new MqttClientFactory();
                 _mqttClient = factory.CreateMqttClient();
-
+                var willResult = new CollectResult
+                {
+                    DeviceId = _currentMqttConfig.ClientId,
+                    Ip = _currentMqttConfig.BrokerAddress,
+                    PlcState = PlcState.Disconnected,
+                    Msg = "mqtt_will",
+                    Time = DateTime.Now
+                };
                 _mqttOptions = new MqttClientOptionsBuilder()
                     .WithConnectionUri(_currentMqttConfig.BrokerAddress)
                     .WithClientId(_currentMqttConfig.ClientId)
                     .WithCredentials(_currentMqttConfig.Username, _currentMqttConfig.Password)
                     .WithProtocolVersion(MqttProtocolVersion.V500) // 强制MQTT 5.0
-                    .WithCleanStart(true) // MQTT5 标准，替代CleanSession
+                    .WithCleanStart(false) // MQTT5 标准，替代CleanSession。false客户端断线重连，Broker 缓存该客户端的订阅、未送达消息，重连后补发
+                    .WithSessionExpiryInterval(60) // MQTT5独有：会话过期时间，单位秒，0表示立即过期，默认0
+
+                    // ========== 遗嘱消息【新版分开配置】==========主要检测代理点轮询设备todo:代理点服务上线后要发上线消息
+                    .WithWillTopic($"Mqtt/Will/{_currentMqttConfig.ClientId}")
+                    .WithWillPayload(willResult.ToString())
+                    .WithWillQualityOfServiceLevel(MqttQualityOfServiceLevel.AtLeastOnce)
+                    .WithWillRetain(true)
+                    .WithWillDelayInterval(10) 
+                    // MQTT5独有：遗嘱延迟10秒（uint）
+                    // 下面是MQTT5遗嘱额外属性（可选）
+                    // .WithWillContentType("application/json")
+                    // .WithWillMessageExpiryInterval(60)
+                    // ============================================
+                    .WithKeepAlivePeriod(TimeSpan.FromSeconds(30))
                     .Build();
 
                 var connectResult = await _mqttClient.ConnectAsync(_mqttOptions, CancellationToken.None);
